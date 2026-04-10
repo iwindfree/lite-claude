@@ -33,19 +33,22 @@ Step이 진행될수록 `mini_claude/` 패키지에 코드가 누적됩니다.
 | Step | 주제 | 만드는 것 |
 |------|------|-----------|
 | 1 | [에이전트 루프 + 스트리밍](step_01_agent_loop.ipynb) | `llm_client.py`, `agent_loop.py` |
+| 1b | [Query Engine 심화 — 비용 추적, 스트리밍, 메시지 관리](step_01b_query_engine_deepdive.ipynb) | `CostTracker`, `StreamAnalyzer`, `MessageTruncator` |
 | 2 | [도구 정의 시스템](step_02_tool_system.ipynb) | `tool_base.py`, `tool_registry.py`, `tools/` |
 | 3 | [도구 실행 오케스트레이션](step_03_tool_orchestration.ipynb) | `orchestrator.py` |
 | 4 | [MCP 외부 도구 통합](step_04_mcp_integration.ipynb) | `mcp/`, `tools/mcp_tool.py` |
+| 5 | [커맨드 시스템 — 슬래시 커맨드](step_05_command_system.ipynb) | `commands.py` |
 
 ### 인프라 — 견고한 에이전트
 
 | Step | 주제 | 만드는 것 |
 |------|------|-----------|
-| 5 | [컨텍스트 관리](step_05_context_management.ipynb) | `context.py` |
+| 5(ctx) | [컨텍스트 관리](step_05_context_management.ipynb) | `context.py` |
 | 6 | [Hooks 런타임 확장](step_06_hooks_system.ipynb) | `hooks.py` |
 | 7 | [권한 시스템](step_07_permission_system.ipynb) | `permissions.py` |
 | 8 | [컨텍스트 압축 + 에러 복구](step_08_context_compaction.ipynb) | `compaction.py`, `state.py`, `recovery.py` |
-| 9 | [세션 간 메모리](step_09_memory_system.ipynb) | `memory.py` |
+| 8b | [Mini REPL — 중간 통합](step_08b_mini_repl.ipynb) | `MiniQueryEngine`, `MiniREPL` |
+| 9 | [세션 간 메모리 + 세션 관리](step_09_memory_system.ipynb) | `memory.py`, `SessionStore`, `/resume` |
 
 ### 고급 — 확장과 통합
 
